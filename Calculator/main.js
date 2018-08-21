@@ -22,8 +22,7 @@ function Evaluate()
     flag=1;
     try 
     { 
-        debugger;
-        ClearOrReplace(Evaluate(document.getElementById("screen").value));
+        ClearOrReplace(eval(document.getElementById("screen").value));
     } 
     catch(e) 
     {

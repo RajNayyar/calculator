@@ -4,7 +4,6 @@
      <link href = "style.css" type= "text/css" rel="StyleSheet">
      <script type="text/javascript" src="main.js"></script
  </head>
-
 <body class = "calculator-body">
 	<section>
 		<input type="text" onkeypress="Enter(event)" id="screen">
@@ -22,8 +21,7 @@
 			</div>
 			<div>
 				<button onclick='Evaluate()' >=</button>
-			</div>
-			
+			</div>	
 		</section>
 		<section class = "numbers">
 			<div>
@@ -52,14 +50,9 @@
 			<div>
 				<button onclick='ConcatNumber("/")'>/</button>
 			</div>
-			
 		</section>
-		
-	
 	</section>
 	<section class = "numbers">
-			
-			
 			<div>
 				<button onclick='ConcatNumber("1")'>1</button>
 			</div>
@@ -72,7 +65,10 @@
 			<div>
 				<button onclick='ConcatNumber("-")'>-</button>
 			</div>
-		</section>
-		
+         </section>
+      <p>HISTORY <a href = "#" id = "clear" onclick="ClearHistory()">(clear)</a></p>
+    <section>
+		<textarea type="text" id="history" rows="8" cols="30"></textarea>
+	</section>
 </body>
 </html>

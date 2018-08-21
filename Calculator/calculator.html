@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head> 
+     <link href = "style.css" type= "text/css" rel="StyleSheet">
+     <script type="text/javascript" src="main.js"></script
+ </head>
+
+<body class = "calculator-body">
+	<section>
+		<input type="text" onkeypress="Enter(event)" id="screen">
+	</section>
+	<section class = "buttons" onkeypress="Enter(event)">
+		<section class = "numbers">
+			<div>
+				<button onclick='ClearOrReplace("")' >clr</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("0")'>0</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("*")'>*</button>
+			</div>
+			<div>
+				<button onclick='Evaluate()' >=</button>
+			</div>
+			
+		</section>
+		<section class = "numbers">
+			<div>
+				<button onclick='ConcatNumber("7")'>7</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("8")'>8</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("9")'>9</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("+")'>+</button>
+			</div>
+		</section>
+		<section class = "numbers">
+		<div>
+				<button onclick='ConcatNumber("4")'>4</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("5")'>5</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("6")'>6</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("/")'>/</button>
+			</div>
+			
+		</section>
+		
+	
+	</section>
+	<section class = "numbers">
+			
+			
+			<div>
+				<button onclick='ConcatNumber("1")'>1</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("2")'>2</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("3")'>3</button>
+			</div>
+			<div>
+				<button onclick='ConcatNumber("-")'>-</button>
+			</div>
+		</section>
+		
+</body>
+</html>
